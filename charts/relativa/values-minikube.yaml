@@ -1,0 +1,37 @@
+image:
+  registry: ghcr.io/totalbyte
+  tag: "1.1.0"
+  pullPolicy: IfNotPresent
+
+secrets:
+  existingSecret: relativa-secrets
+
+backup:
+  enabled: false
+
+ingress:
+  enabled: false
+
+gateway:
+  replicaCount: 1
+  progressDeadlineSeconds: 60
+  image:
+    tag: ""
+
+auth:
+  replicaCount: 1
+
+core:
+  replicaCount: 1
+
+graph:
+  replicaCount: 1
+
+audit:
+  replicaCount: 1
+
+ml:
+  replicaCount: 1
+
+client:
+  replicaCount: 1
