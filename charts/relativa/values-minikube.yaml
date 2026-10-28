@@ -16,7 +16,7 @@ gateway:
   replicaCount: 1
   progressDeadlineSeconds: 60
   image:
-    tag: ""
+    tag: "9.9.9"
 
 auth:
   replicaCount: 1
